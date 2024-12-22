@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  <title></title>
+</head>
+<body>
+  <h1>All books</h1>
+  {% for book in book_list %}
+  <ul>
+    <li>Title: {{ book.title }}</li>
+    <li>Subtitle: {{ book.subtitle }}</li>
+    <li>Author: {{ book.author }}</li>
+    <li>ISBN: {{ book.isbn }}</li>
+  </ul>
+  {% endfor %}
+</body>
+</html>
